@@ -1,0 +1,7 @@
+declare int nr.
+declare boolean ok := true.
+read int nr.
+if nr < 2 then ok := false.
+for i: <2, nr / 2, 1>
+    if nr % i = 0 then ok := false.
+print ok.

@@ -1,0 +1,7 @@
+declare int n, sum := 0.
+declare list int numbers[n].
+read int n.
+for i: <0, n - 1, 1>
+    read numbers[i].
+    sum :+ numbers[i].
+print sum.

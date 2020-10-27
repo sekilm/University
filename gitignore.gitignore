@@ -1,0 +1,54 @@
+__pycache__/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.xml
+.idea
+.idea/
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__init__.py
+
+.class
+out/
+*.pl~
+guava-28.1/
+*.class
+*.kotlin_module
+logs/
+*.lisp~
+*.ofasl
+*.lisp#
+Semester 3/MAP/Toy Language with GUI/log.txt
+
+#Visual Studio
+*.suo
+bin/
+obj/
+Properties/
+.vs/
+
+.gradle/
+gradle/
+*.log
+Semester 4/Web Programming/untitled/
+Semester 4/Web Programming/Lab 8/resources/User Profile Pictures/

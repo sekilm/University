@@ -1,0 +1,13 @@
+E:\School\PDP\lab2\lab2\bin\Debug\netcoreapp3.1\lab2.exe
+E:\School\PDP\lab2\lab2\bin\Debug\netcoreapp3.1\lab2.deps.json
+E:\School\PDP\lab2\lab2\bin\Debug\netcoreapp3.1\lab2.runtimeconfig.json
+E:\School\PDP\lab2\lab2\bin\Debug\netcoreapp3.1\lab2.runtimeconfig.dev.json
+E:\School\PDP\lab2\lab2\bin\Debug\netcoreapp3.1\lab2.dll
+E:\School\PDP\lab2\lab2\bin\Debug\netcoreapp3.1\lab2.pdb
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.csprojAssemblyReference.cache
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.AssemblyInfoInputs.cache
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.AssemblyInfo.cs
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.csproj.CoreCompileInputs.cache
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.dll
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.pdb
+E:\School\PDP\lab2\lab2\obj\Debug\netcoreapp3.1\lab2.genruntimeconfig.cache
