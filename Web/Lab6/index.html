@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>News Service</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        #loginForm, #filterSection{
+            margin: 10px 20px 10px 20px;
+        }
+    </style>
+    <script src="./JQuery/jquery-3.5.0.min.js"></script>
+    <script language="javascript">
+        
+        var prevFilter = "";
+
+        function validateUser(valid){
+                console.log(valid);
+                if(valid == 0){
+                    alert("User doesn't exist!");
+                }
+                else{
+                    alert("Login successfull!");
+                    $.post("server/create_session.php", {user: valid});
+                    window.open("admin_page.php");
+                    window.close()
+                }
+        }
+            
+        function card(title, prod, date, cat, desc){
+            var content = "<div style='background-color: lightgrey'>";
+            content+="<h1>"+title+"</h1>";
+            content+="<h5>"+prod+", "+date+", "+cat+"</h5>";
+            content+="<p>"+desc+"</p>";
+            content+="</div>";
+            return content;
+        }
+
+        function getAllNews(news){
+            var content = "";
+            news.forEach(element => {
+                content+=card(element[1], element[2], element[3], element[4], element[5])+"<br>";
+            });
+            
+            $("#main").html(content);
+        }
+
+        function displayNews(){
+            $.getJSON("server/controller.php", {action: "getAllNews"},
+            getAllNews);
+        }
+
+        function getFilter(){
+            if($("#filterDateFrom").val() == "" && $("#filterDateTill").val() == "" && $("#filterCat").val() == "")
+            {
+                prevFilter = "";
+            }
+            else{
+                prevFilter = "";
+                if($("#filterDateFrom").val() != ""){
+                    prevFilter+=" Date From: "+$("#filterDateFrom").val();
+                }
+                if($("#filterDateTill").val() != ""){
+                    prevFilter+=" Date Till: "+$("#filterDateTill").val();
+                }
+                if($("#filterCat").val() != ""){
+                    prevFilter+=" Category: "+$("#filterCat").val();
+                }
+            }
+        }
+
+        function filter(){
+            if($("#filterDateFrom").val() == "" && $("#filterDateTill").val() == "" && $("#filterCat").val() == "")
+            {
+                alert("No filter has been selected!");
+                displayNews();
+                $("#prevFilter").html(prevFilter);
+            }
+            else{
+                $.getJSON("server/controller.php", {action: "filter", dateFrom: $("#filterDateFrom").val(), dateTill: $("#filterDateTill").val(), cat: $("#filterCat").val()}, getAllNews);
+                $("#prevFilter").html(prevFilter);
+                getFilter();
+            }
+        }
+        
+        $(function(){
+
+            $("#btn_login").click(function(){
+                $.post("server/controller.php", {action: "login", user: $("#usr").val(), password: $("#passw").val()},
+                validateUser);
+            });
+
+            $("#btn_filter").click(function (){
+                filter();
+            });
+        });  
+
+        window.displayNews();
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+        <section id="loginForm">
+            <form>
+                Username: <input type="text" id="usr" name="user"/><br>
+                Password: <input type="password" id="passw" name = "password"/><br>
+                <input type="button" id="btn_login" value="Login"/>
+            </form>
+        </section>
+        <section id="filterSection">
+            <h4>Filter</h4>
+            <span>Previous filter: <span id="prevFilter"></span></span>
+            <form>
+                News from: <input type="date" id="filterDateFrom"/>
+                News till: <input type="date", id="filterDateTill"/>
+                Category: <input type="text" id="filterCat"/>
+                <input type="button" id="btn_filter" value="Filter"/>
+            </form>
+        </section>
+    </div>
+    <section id="main"></section>
+</body>
+</html>

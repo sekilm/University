@@ -1,0 +1,97 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <title>FilterNews</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $.get("/Login/getLoggedInUser", function (data, status) {
+            if (data == "")
+                window.location.href = "/Login";
+        });
+        $(document).ready(function () {
+            $.get("/Search/getAllNews",
+                function (data, status) {
+                    $("#maindiv").html(data);
+                });
+
+            $("#get-all").click(function () {
+                $.get("/Search/getAllNews",
+                    function (data, status) {
+                        $("#maindiv").html(data);
+                    });
+            });
+
+            $("#search").click(function () {
+                $.get("/Search/filterNews", {
+                    category: $("#category").val(),
+                    start_date: $("#start-date").val(),
+                    end_date: $("#end-date").val()
+                },
+                    function (data, status) {
+                        $("#maindiv").html(data);
+                    });
+            });
+            $("#add").click(function () {
+                window.location.href = "/News";
+            });
+            $("#goback").click(function () {
+                window.location.href = "/Main";
+            });
+        });
+        function seeItem(row) {
+            localStorage["title"] = row.cells[0].innerHTML;
+            localStorage["text"] = row.cells[1].innerHTML;
+            localStorage["producer"] = row.cells[2].innerHTML;
+            localStorage["date"] = row.cells[3].innerHTML;
+            localStorage["category"] = row.cells[4].innerHTML;
+            window.location.href = '/Edit';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <button class="btn btn-primary" id="add" type="button">Add news</button>
+  
+        <div class="form-group mt-3">
+            <input placeholder="Category" class="form-control" type="text" id="category" />
+        </div>
+        <div class="form-group">
+            <input placeholder="Start date" class="form-control" type="date" id="start-date" />
+        </div>
+        <div class="form-group">
+            <input placeholder="End date" class="form-control" type="date" id="end-date" />
+        </div>
+        <div class="form-group">
+            <input class="form-control col-4" id="search" type="button" value="Find news" />
+        </div>
+        <div class="form-group">
+            <input class="form-control col-4" id="get-all" type="button" value="Show all news" />
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Text</th>
+                    <th scope="col">Producer</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Category</th>
+                </tr>
+            </thead>
+            <tbody id="maindiv">
+            </tbody>
+        </table>
+        
+        <button class="btn btn-dark" id="goback" type="button">Go back</button>
+    </div>
+</body>
+</html>

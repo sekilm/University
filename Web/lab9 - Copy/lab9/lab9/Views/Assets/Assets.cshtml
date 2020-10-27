@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <title>Assets</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $.get("/Login/getLoggedInUser", function (data, status) {
+            if (data == "")
+                window.location.href = "/Login";
+        });
+        $(document).ready(function () {
+            $.get("/Assets/getAssets",
+                function (data, status) {
+                    $("#maindiv").html(data);
+                });
+            $("#goback").click(function () {
+                window.location.href = "/Main";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody id="maindiv">
+            </tbody>
+        </table>
+
+        <input id="id" type="hidden" value="" />
+        <button class="btn btn-dark" id="goback" type="button">Go back</button>
+    </div>
+</body>
+</html>

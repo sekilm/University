@@ -1,0 +1,73 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Add news</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $.get("/Login/getLoggedInUser", function (data, status) {
+            if (data == "")
+                window.location.href = "/Login";
+        });
+        $(document).ready(function () {
+            $("#add").click(function () {
+                $.get("/News/AddNews",
+                    {
+                        title: $("#title").val(),
+                        text: $("#text").val(),
+                        producer: $("#producer").val(),
+                        publish_date: $("#publish_date").val(),
+                        category: $("#category").val()
+                    },
+                    function (data, status) {
+                        data.indexOf("Error") !== -1 ?
+                            $("#resultdiv").css("color", "red") :
+                            $("#resultdiv").css("color", "green");
+                        $("#resultdiv").html(data);
+                    });
+            });
+            $("#cancel").click(function () {
+                window.location.href = "/Search";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="username">Title: </label>
+            <input class="form-control col-5" id="title" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="username">Description: </label>
+            <input class="form-control col-5" id="text" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="username">Producer: </label>
+            <input class="form-control col-5" id="producer" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="username">Date: </label>
+            <input class="form-control col-5" id="publish_date" type="date" />
+        </div>
+        <div class="form-group">
+            <label for="username">Category: </label>
+            <input class="form-control col-5" id="category" type="text" />
+        </div>
+        <button id="add" class="btn btn-primary" type="button">Add this news</button>
+        <button id="cancel" class="btn btn-primary" type="button">Go back</button>
+        <div id="resultdiv"></div>
+    </div>
+</body>
+</html>
+

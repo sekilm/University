@@ -1,0 +1,4 @@
+rootProject.name = 'p6restructured'
+include 'server'
+include 'client'
+include 'common'

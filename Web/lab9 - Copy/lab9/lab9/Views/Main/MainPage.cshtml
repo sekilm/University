@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FilterNews</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $.get("/Login/getLoggedInUser", function (data, status) {
+            if (data == "")
+                window.location.href = "/Login";
+        });
+        $(document).ready(function () {
+            $.get("/Main/getAssets",
+                {
+                    username: localStorage["username"]
+                },
+                function (data, status) {
+                    $("#maindiv").html(data);
+                });
+            $("#logout").click(function () {
+                $.get("/Login/logout",
+                    function (data, status) {
+                        window.location.href = "/Login";
+                    });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Welcome</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead>
+            <tbody id="maindiv">
+            </tbody>
+        </table>
+        <button id="logout" class="btn btn-secondary" type="button">Log out</button>
+    </div>
+</body>
+</html>

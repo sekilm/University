@@ -1,0 +1,80 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit news</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $.get("/Login/getLoggedInUser", function (data, status) {
+            if (data == "")
+                window.location.href = "/Login";
+        });
+        $(document).ready(function () {
+            $.get("/Edit/getNews", {
+                title: localStorage["title"],
+                text: localStorage["text"],
+                producer: localStorage["producer"],
+                publish_date: localStorage["date"],
+                category: localStorage["category"]
+            },
+                function (data, status) {
+                    $("#maindiv").html(data);
+                });
+            $("#update").click(function () {
+                $.get("/Edit/UpdateNews",
+                    {
+                        title: $("#title").val(),
+                        text: $("#text").val(),
+                        producer: $("#producer").val(),
+                        publish_date: $("#publish_date").val(),
+                        category: $("#category").val()
+                    },
+                    function (data, status) {
+                        data.indexOf("Error") !== -1 ?
+                            $("#resultdiv").css("color", "red") :
+                            $("#resultdiv").css("color", "green");
+                        $("#resultdiv").html(data);
+                    });
+            });
+            $("#delete").click(function () {
+                $.get("/Edit/DeleteNews",
+                    {
+                        title: $("#title").val(),
+                        text: $("#text").val(),
+                        producer: $("#producer").val(),
+                        publish_date: $("#publish_date").val(),
+                        category: $("#category").val()
+                    },
+                    function (data, status) {
+                        data.indexOf("Error") !== -1 ?
+                            $("#resultdiv").css("color", "red") :
+                            $("#resultdiv").css("color", "green");
+                        $("#resultdiv").html(data);
+                        window.location.href = "/Search";
+                    });
+            });
+            $("#cancel").click(function () {
+                window.location.href = "/Search";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="maindiv"></div>
+        <button class="btn btn-primary" id="update" type="button">Update this news</button>
+        <button class="btn btn-primary" id="delete" type="button">Delete this news</button>
+        <button class="btn btn-primary" id="cancel" type="button">Cancel</button>
+        <div id="resultdiv"></div>
+    </div>
+</body>
+</html>
+

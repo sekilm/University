@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.12/48e4e5d60309ebd833bc528dcf77668eab3cd72c/lombok-1.18.12.jar" />
+        </processorPath>
+        <module name="catalog-1-list-start_main" />
+        <module name="catalog-web_main" />
+        <module name="catalog-core_main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="11">
+      <module name="catalog-1-ngjpa_main" target="1.8" />
+      <module name="catalog-1-ngjpa_test" target="1.8" />
+      <module name="ro.ubb.catalog-1-list.catalog-1-list.main" target="11" />
+      <module name="ro.ubb.catalog-1-list.catalog-1-list.test" target="11" />
+      <module name="ro.ubb.catalog-1-list.catalog-core.main" target="11" />
+      <module name="ro.ubb.catalog-1-list.catalog-core.test" target="11" />
+      <module name="ro.ubb.catalog-1-list.catalog-web.main" target="11" />
+      <module name="ro.ubb.catalog-1-list.catalog-web.test" target="11" />
+      <module name="ro.ubb.catalog.catalog-1-list.main" target="11" />
+      <module name="ro.ubb.catalog.catalog-1-list.test" target="11" />
+      <module name="ro.ubb.catalog.catalog-core.main" target="11" />
+      <module name="ro.ubb.catalog.catalog-core.test" target="11" />
+      <module name="ro.ubb.catalog.catalog-web.main" target="11" />
+      <module name="ro.ubb.catalog.catalog-web.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

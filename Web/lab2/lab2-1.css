@@ -1,0 +1,47 @@
+.button1 {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    height: 200px;
+    width: 400px;
+    font-size: 30px;
+    color: black;
+    background: #feda71;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#feda71), to(#febe4d));
+    background: -moz-linear-gradient(#feda71, #febe4d);
+    background: linear-gradient(#feda71, #febe4d);
+    border: none;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 0 20px 0 darkorange;
+}
+
+.button1:hover {
+    background: #f9bd4f;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f9bd4f), to(#f0b64d));
+    background: -moz-linear-gradient(#f9bd4f, #f0b64d);
+    background: linear-gradient(#f9bd4f, #f0b64d);
+    box-shadow: 0 10px 0 saddlebrown;
+    transform: translateY(5px);
+}
+
+.button2 {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    height: 200px;
+    width: 400px;
+    font-size: 30px;
+    color: black;
+    background: #d1d1d1;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#d1d1d1), to(#afafaf));
+    background: -moz-linear-gradient(#d1d1d1, #afafaf);
+    background: linear-gradient(#d1d1d1, #afafaf);
+    border: none;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.button2:hover {
+    transform: scale(.9);
+}

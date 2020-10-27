@@ -1,0 +1,14 @@
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.cell {
+    text-align: center;
+    border: none;
+    background: transparent;
+}
+
+th, td {
+    padding: 0 20px;
+}

@@ -1,0 +1,11 @@
+input {
+    position: relative;
+    border-right: none;
+    width: 150px;
+}
+
+select {
+    position: absolute;
+    border-left: none;
+    width: 20px;
+}

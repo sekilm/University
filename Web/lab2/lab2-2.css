@@ -1,0 +1,94 @@
+.row {
+    position: fixed;
+    bottom: 0;
+}
+
+#main {
+    position: fixed;
+    top: 5%;
+    left: 25%;
+    width: 1000px;
+    height: 700px;
+    background: url("thumb-1920-1003542.jpg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img1 {
+    width: 300px;
+    height: 150px;
+    background: url("thumb-1920-979776.jpg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img2 {
+    width: 300px;
+    height: 150px;
+    background: url("thumb-1920-985653.jpg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img3 {
+    width: 300px;
+    height: 150px;
+    background: url("thumb-1920-1003542.jpg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img4 {
+    width: 300px;
+    height: 150px;
+    background: url("thumb-1920-1004017.png") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img5 {
+    width: 300px;
+    height: 150px;
+    background: url("thumb-1920-1006255.jpg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img6 {
+    width: 300px;
+    height: 150px;
+    background: url("thumb-1920-1015424.jpg") no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
+#img1:hover ~ #main {
+    background: url("thumb-1920-979776.jpg") no-repeat;
+    background-size: contain;
+}
+
+#img2:hover ~ #main {
+    background: url("thumb-1920-985653.jpg") no-repeat;
+    background-size: contain;
+}
+
+#img3:hover ~ #main {
+    background: url("thumb-1920-1003542.jpg") no-repeat;
+    background-size: contain;
+}
+
+#img4:hover ~ #main {
+    background: url("thumb-1920-1004017.png") no-repeat;
+    background-size: contain;
+}
+
+#img5:hover ~ #main {
+    background: url("thumb-1920-1006255.jpg") no-repeat;
+    background-size: contain;
+}
+
+#img6:hover ~ #main {
+    background: url("thumb-1920-1015424.jpg") no-repeat;
+    background-size: contain;
+}
+

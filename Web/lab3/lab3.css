@@ -1,0 +1,379 @@
+.top-side {
+    position: relative;
+    width: 64%;
+    margin: auto
+}
+
+#emag-logo {
+    position: absolute;
+    top: 20px;
+}
+
+.search-bar {
+    position: relative;
+    width: 50%;
+    left: 150px;
+    top: 18px;
+}
+
+input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    padding: 15px 5px 15px 15px;
+    border-radius: 30px;
+    border-color: #0082e6;
+}
+
+#search-icon {
+    position: absolute;
+    right: -10px;
+    top: 7px;
+    filter: invert(39%) sepia(100%) saturate(4996%) hue-rotate(190deg) brightness(105%) contrast(100%);
+}
+
+.Sbutton-part {
+    position: relative;
+    left: 66%;
+    top: 10px;
+    width: 11.9%;
+}
+
+.Sbutton {
+    position: absolute;
+    left: 0;
+}
+
+#cont {
+    position: absolute;
+    left: 50px;
+}
+
+.favorite-part {
+    position: relative;
+    left: 80%;
+    top: 10px;
+    width: 9.5%;
+}
+
+#favorite {
+    position: absolute;
+    left: 43px;
+}
+
+#cos {
+    position: absolute;
+    left: 43px;
+}
+
+#heart-icon {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    filter: invert(39%) sepia(100%) saturate(4996%) hue-rotate(190deg) brightness(105%) contrast(100%);
+}
+
+.shopping-cart-part {
+    position: relative;
+    top: 10px;
+    left: 91%;
+    width: 10.8%;
+}
+
+#shopping-cart {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    filter: invert(39%) sepia(100%) saturate(4996%) hue-rotate(190deg) brightness(105%) contrast(100%);
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 5px solid;
+}
+
+#triangle1 {
+    position: absolute;
+    top: 23px;
+    right: 0;
+}
+
+#triangle2 {
+    position: absolute;
+    right: 0;
+    top: 23px;
+}
+
+#triangle3 {
+    position: absolute;
+    top: 23px;
+    right: 0;
+}
+
+.list {
+    position: relative;
+    top: 75px;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(to right, red, dodgerblue);
+}
+
+.list-items {
+    position: absolute;
+    left: 425px;
+    top: -4px;
+}
+
+#tabs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+}
+
+#tabs > li {
+    margin: 0 15px 0 5px;
+}
+
+#help {
+    position: absolute;
+    right: 17%;
+    top: -3px;
+}
+
+#produse-text {
+    position: absolute;
+    top: -11px;
+    left: 34px;
+    font-size: large;
+}
+
+#burger {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    filter: invert(100%) sepia(14%) saturate(7470%) hue-rotate(167deg) brightness(125%) contrast(112%);
+}
+
+#headset {
+    position: absolute;
+    top: 10px;
+    right: 21.5%;
+    filter: invert(100%) sepia(14%) saturate(7470%) hue-rotate(167deg) brightness(125%) contrast(112%);
+}
+
+#black-overlap {
+    position: absolute;
+    top: 11.3%;
+    left: 18%;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(0,0,0,0.43);
+}
+
+.menu {
+    position: relative;
+    top: 59px;
+    left: 18%;
+    width: 270px;
+    height: 447px;
+    border: none;
+    background-color: rgba(0,0,0,0.43);
+}
+
+#menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+#menu-list > li {
+    display: flex;
+    margin: 8px 0;
+}
+
+#reclama {
+    position: absolute;
+    top: 0;
+    left: 270px;
+}
+
+.icons {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 28px;
+    height: 450px;
+}
+
+.icons > img {
+    filter: invert(100%) sepia(14%) saturate(7470%) hue-rotate(167deg) brightness(125%) contrast(112%);
+    margin-bottom: 10px;
+}
+
+.beneath-ad {
+    float: left;
+    position: relative;
+    top: 100px;
+    left: 340px;
+    width: 65.1%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.43);
+}
+
+.beneath-ad * {
+    float: left;
+    margin: 20px 5px 5px 10px;
+}
+
+.beneath-ad > p {
+    margin-top: 40px;
+}
+
+#text-cookies {
+    position: absolute;
+    top: 76.5%;
+    right: 17%;
+    font-size: small;
+    color: grey;
+}
+
+#alti-clienti {
+    position: absolute;
+    bottom: 7%;
+    left: 18.5%;
+    font-size: xx-large;
+}
+
+.produse {
+    position: relative;
+    float: left;
+    bottom: -250px;
+    left: 18.5%;
+}
+
+.produse > div {
+    position: relative;
+    float: left;
+    height: 350px;
+    padding: 5px;
+    margin: 10px 15px 10px 0;
+    background-color: rgba(0,0,0,0.43);
+    text-align: center;
+}
+
+.produse > div > img {
+    padding: 15px 30px 0;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars * {
+    margin:0 auto;
+}
+
+.stars > img {
+    filter: invert(80%) sepia(100%) saturate(2558%) hue-rotate(351deg) brightness(108%) contrast(106%);
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.rating > .stars > p {
+    padding-left: 10px;
+}
+
+.add-to-favorites {
+    position: absolute;
+    top: 15px;
+    left: 163px;
+    filter: invert(100%) sepia(14%) saturate(7470%) hue-rotate(167deg) brightness(125%) contrast(112%);
+}
+
+.pret {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pret-vechi {
+    font-size: small;
+    margin-bottom: 0;
+}
+
+.pret-nou {
+    font-size: large;
+    margin: 0;
+    color: red;
+}
+
+.red-square {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, darkred, red);
+}
+
+.red-square > img {
+    margin-top: 3px;
+    filter: invert(100%) sepia(14%) saturate(7470%) hue-rotate(167deg) brightness(125%) contrast(112%);
+}
+
+.produs-detalii {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    margin: 10px 10px 10px 20px;
+    background-image: linear-gradient(to right, royalblue, dodgerblue);
+}
+
+.produs-detalii > p {
+    font-size: small;
+    margin: 7px 5px 7px 25px;
+}
+
+.reducere {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 10px;
+    left: -5px;
+    border-radius: 4px;
+    overflow: visible;
+    background-color: brown;
+}
+
+.reducere > p {
+    margin: 5px;
+}
+
+.next {
+    position: relative;
+    top: 500px;
+    right: -350px;
+    width: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.43);
+}
+
+.next > img {
+    filter: invert(58%) sepia(41%) saturate(4703%) hue-rotate(191deg) brightness(104%) contrast(100%);
+}

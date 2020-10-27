@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>FilterNews</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script>
+        $.get("/Login/getLoggedInUser", function (data, status) {
+            if (data == "")
+                window.location.href = "/Login";
+        });
+        $(document).ready(function () {
+            $("#logout").click(function () {
+                $.get("/Login/logout",
+                    function (data, status) {
+                        window.location.href = "/Login";
+                    });
+            });
+            $("#news").click(function () {
+                window.location.href = "/Search";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Welcome</p>
+        <button id="news" class="btn btn-primary" type="button">See news</button>
+        <button id="logout" class="btn btn-secondary" type="button">Log out</button>
+    </div>
+</body>
+</html>
