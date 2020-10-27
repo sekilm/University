@@ -1,0 +1,31 @@
+Problem: The Sprinkler
+
+Model used: Mamdani
+
+The algorithm builds a rule-based system by using the data from the given graphs and tables (temperature, humidity,
+and time). This data was kept in dictionaries, while the rules were kept in a list. Temperature, humidity and time
+are saved in dictionaries as fuzzy descriptions, while the rules are saved in a list as fuzzy rules. These rules
+would then serve as a means to compute the approximate time when given the temperature and the humidity. In order to
+do so, we first compute the probabilities of the temperature and humidity to belong to a certain "class" (for example
+cold or warm for temperature and dry or wet for humidity), and so, they are assign to their closest "class" chosen by
+the highest probability. Using these results, we apply a min function (which would represent a logical AND) between
+the probabilities of the temperature and of the humidity. Then we simulate building a polygon by pinpointing these
+probabilities on a graph and by taking the value of the x coordinate from the centroid of this polygon, we get our
+predicted time.
+
+Examples:
+Input: temperature = 19, humidity = 50
+Probabilities: temperature: {'very cold': 0, 'cold': 0, 'normal': 0.2, 'warm': 0.8, 'hot': 0}
+               humidity: {'dry': 0, 'normal': 1.0, 'wet': 0}
+               time: {'medium': 0.8}
+Polygon: [(0, 0), (40, 0.8), (60, 0.8), (100, 0)]
+Centroid: (51.161, 0.311)
+Result: 51.161
+
+Input: temperature = 30, humidity = 5
+Probabilities: temperature: {'very cold': 0, 'cold': 0, 'normal': 0, 'warm': 0, 'hot': 1.0}
+               humidity: {'dry': 0.9, 'normal': 0.1, 'wet': 0}
+               time: {'long': 0.9}
+Polygon: [(50, 0), (90, 0.9), (100, 0.9), (100, 0)]
+Centroid: (91.0, 0.35)
+Result: 91.0

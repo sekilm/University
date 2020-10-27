@@ -1,0 +1,4 @@
+If we have the humidity: 50 and the temperature: 19 it will probably have the operating time: 50.0
+If we have the humidity: 25 and the temperature: 5 it will probably have the operating time: 62.5
+If we have the humidity: 5 and the temperature: 30 it will probably have the operating time: 91.0
+If we have the humidity: 76 and the temperature: 16 it will probably have the operating time: 38.91428571428572

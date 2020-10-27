@@ -1,0 +1,3 @@
+﻿  SortedList.cpp
+  H:\School\Facultate\Dsa\lab7\lab7\SortedList.cpp(60) : warning C4715: 'SortedList::getElement': not all control paths return a value
+  lab7.vcxproj -> H:\School\Facultate\Dsa\lab7\Debug\lab7.exe

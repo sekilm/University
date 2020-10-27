@@ -1,0 +1,267 @@
+{
+  "in_descriptions": {
+    "temperature": [
+      [
+        "very cold",
+        "trapezoid",
+        [
+          -1000,
+          -30,
+          -20,
+          5
+        ]
+      ],
+      [
+        "cold",
+        "triangular",
+        [
+          -5,
+          0,
+          10
+        ]
+      ],
+      [
+        "normal",
+        "trapezoid",
+        [
+          5,
+          10,
+          15,
+          20
+        ]
+      ],
+      [
+        "warm",
+        "triangular",
+        [
+          15,
+          20,
+          25
+        ]
+      ],
+      [
+        "hot",
+        "trapezoid",
+        [
+          25,
+          30,
+          35,
+          1000
+        ]
+      ]
+    ],
+    "humidity": [
+      [
+        "dry",
+        "triangular",
+        [
+          -1000,
+          0,
+          50
+        ]
+      ],
+      [
+        "normal",
+        "triangular",
+        [
+          0,
+          50,
+          100
+        ]
+      ],
+      [
+        "wet",
+        "triangular",
+        [
+          50,
+          100,
+          1000
+        ]
+      ]
+    ]
+  },
+  "out_descriptions": {
+    "time": [
+      [
+        "short",
+        "triangular",
+        [
+          -1000,
+          0,
+          50
+        ],
+        "inverse_line",
+        [
+          50,
+          0
+        ]
+      ],
+      [
+        "medium",
+        "triangular",
+        [
+          0,
+          50,
+          100
+        ],
+        "inverse_triangle",
+        [
+          0,
+          50,
+          100
+        ]
+      ],
+      [
+        "long",
+        "triangular",
+        [
+          50,
+          100,
+          1000
+        ],
+        "inverse_line",
+        [
+          50,
+          100
+        ]
+      ]
+    ]
+  },
+  "rules": [
+    {
+      "in": {
+        "temperature": "very cold",
+        "humidity": "wet"
+      },
+      "out": {
+        "time": "short"
+      }
+    },
+    {
+      "in": {
+        "temperature": "cold",
+        "humidity": "wet"
+      },
+      "out": {
+        "time": "short"
+      }
+    },
+    {
+      "in": {
+        "temperature": "normal",
+        "humidity": "wet"
+      },
+      "out": {
+        "time": "short"
+      }
+    },
+    {
+      "in": {
+        "temperature": "warm",
+        "humidity": "wet"
+      },
+      "out": {
+        "time": "short"
+      }
+    },
+    {
+      "in": {
+        "temperature": "hot",
+        "humidity": "wet"
+      },
+      "out": {
+        "time": "medium"
+      }
+    },
+    {
+      "in": {
+        "temperature": "very cold",
+        "humidity": "normal"
+      },
+      "out": {
+        "time": "short"
+      }
+    },
+    {
+      "in": {
+        "temperature": "cold",
+        "humidity": "normal"
+      },
+      "out": {
+        "time": "medium"
+      }
+    },
+    {
+      "in": {
+        "temperature": "normal",
+        "humidity": "normal"
+      },
+      "out": {
+        "time": "medium"
+      }
+    },
+    {
+      "in": {
+        "temperature": "warm",
+        "humidity": "normal"
+      },
+      "out": {
+        "time": "medium"
+      }
+    },
+    {
+      "in": {
+        "temperature": "hot",
+        "humidity": "normal"
+      },
+      "out": {
+        "time": "long"
+      }
+    },
+    {
+      "in": {
+        "temperature": "very cold",
+        "humidity": "dry"
+      },
+      "out": {
+        "time": "medium"
+      }
+    },
+    {
+      "in": {
+        "temperature": "cold",
+        "humidity": "dry"
+      },
+      "out": {
+        "time": "long"
+      }
+    },
+    {
+      "in": {
+        "temperature": "normal",
+        "humidity": "dry"
+      },
+      "out": {
+        "time": "long"
+      }
+    },
+    {
+      "in": {
+        "temperature": "warm",
+        "humidity": "dry"
+      },
+      "out": {
+        "time": "long"
+      }
+    },
+    {
+      "in": {
+        "temperature": "hot",
+        "humidity": "dry"
+      },
+      "out": {
+        "time": "long"
+      }
+    }
+  ]
+}

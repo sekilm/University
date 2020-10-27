@@ -1,0 +1,6 @@
+﻿  TestP14.cpp
+H:\School\Facultate\Dsa\lab5\lab5\TestP14.cpp(35): warning C4101: 'ex': unreferenced local variable
+H:\School\Facultate\Dsa\lab5\lab5\TestP14.cpp(66): warning C4018: '<': signed/unsigned mismatch
+H:\School\Facultate\Dsa\lab5\lab5\TestP14.cpp(72): warning C4101: 'e': unreferenced local variable
+H:\School\Facultate\Dsa\lab5\lab5\TestP14.cpp(87): warning C4101: 'e': unreferenced local variable
+  lab5.vcxproj -> H:\School\Facultate\Dsa\lab5\Debug\lab5.exe

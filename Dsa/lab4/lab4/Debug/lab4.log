@@ -1,0 +1,3 @@
+﻿  Map.cpp
+h:\school\facultate\dsa\lab4\lab4\map.cpp(90): warning C4715: 'Map::add': not all control paths return a value
+  lab4.vcxproj -> H:\School\Facultate\Dsa\lab4\Debug\lab4.exe
