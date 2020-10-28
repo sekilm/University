@@ -1,4 +1,4 @@
-from lab2 import HashTable
+from hashtable import HashTable
 
 
 class SymbolTable:
@@ -6,10 +6,11 @@ class SymbolTable:
         self.table = HashTable()
 
     def insert(self, token):
-        self.table.insert(token)
+        if self.table.find(token) is None:
+            self.table.insert(token)
 
     def find(self, token):
-        self.table.find(token)
+        return self.table.find(token)
 
     def __str__(self):
         s = ""
