@@ -3,8 +3,7 @@ class PIF:
         self.items = []
 
     def genPIF(self, token, st_pos):
-        if (token, st_pos) not in self.items:
-            self.items.append((token, st_pos))
+        self.items.append((token, st_pos))
 
     def __str__(self):
         s = ""

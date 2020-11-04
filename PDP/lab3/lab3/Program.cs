@@ -6,9 +6,9 @@ namespace lab3
 {
     class Program
     {
-        private static int n = 5;
-        private static int k = 4;
-        private static int m = 6;
+        private static int n = 250;
+        private static int k = 100;
+        private static int m = 300;
 
         private static int threadNumber = 3;
         
@@ -130,11 +130,13 @@ namespace lab3
             for (int i = 0; i < threadNumber; i++)
                 threads[i].Join();
             
+            Console.WriteLine("Threads");
             showMatrix(resultMatrix, n, m);
 
             for (int i = 0; i < threadNumber; i++)
                 ThreadPool.QueueUserWorkItem(obj => workerForColumns(i));
-
+            
+            Console.WriteLine("Thread pool");
             showMatrix(resultMatrix, n, m);
         }
     }

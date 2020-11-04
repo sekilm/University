@@ -39,6 +39,7 @@ if __name__ == '__main__':
             spline = re.split('( |,|\.|~|\"|<=|=>|=|%|<|>|{|}|\[|]|\(|\)|:=)', line)
 
             for token in spline:
+                # check if the string was finished on the same line
                 if within_string and token == ".":
                     within_string = False
                     print(f"Lexical error on line {line_nr} at token \"{entire_string}\". String was not closed.")
@@ -55,6 +56,7 @@ if __name__ == '__main__':
                 elif token in tokens:
                     pif.genPIF(token, 0)
 
+                # pass if we find a space outside a string
                 elif within_string is False and token == " ":
                     pass
 

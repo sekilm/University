@@ -11,3 +11,16 @@ E:\School\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.csproj.CoreCompileInputs.ca
 E:\School\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.dll
 E:\School\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.pdb
 E:\School\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.genruntimeconfig.cache
+E:\School\Facultate\University\PDP\lab3\lab3\bin\Debug\netcoreapp3.1\lab3.exe
+E:\School\Facultate\University\PDP\lab3\lab3\bin\Debug\netcoreapp3.1\lab3.deps.json
+E:\School\Facultate\University\PDP\lab3\lab3\bin\Debug\netcoreapp3.1\lab3.runtimeconfig.json
+E:\School\Facultate\University\PDP\lab3\lab3\bin\Debug\netcoreapp3.1\lab3.runtimeconfig.dev.json
+E:\School\Facultate\University\PDP\lab3\lab3\bin\Debug\netcoreapp3.1\lab3.dll
+E:\School\Facultate\University\PDP\lab3\lab3\bin\Debug\netcoreapp3.1\lab3.pdb
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.csprojAssemblyReference.cache
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.AssemblyInfoInputs.cache
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.AssemblyInfo.cs
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.csproj.CoreCompileInputs.cache
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.dll
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.pdb
+E:\School\Facultate\University\PDP\lab3\lab3\obj\Debug\netcoreapp3.1\lab3.genruntimeconfig.cache

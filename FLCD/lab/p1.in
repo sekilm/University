@@ -1,7 +1,7 @@
-declare int a, b, c, max.
+declare int a, b, c, max, axm, maxm.
 read int a, b, c.
 max := a.
-if a < b then {
+if a <= b then {
                 max := b.
                 if b < c then max := c.
               }
