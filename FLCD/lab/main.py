@@ -19,7 +19,7 @@ def get_tokens(filename):
 if __name__ == '__main__':
     pif = PIF()
     st = SymbolTable()
-    filename = "p1err.in"
+    filename = "p1.in"
     tokens_file = "tokens.in"
     tokens = get_tokens(tokens_file)
 
@@ -39,8 +39,12 @@ if __name__ == '__main__':
             spline = re.split('( |,|\.|~|\"|<=|=>|=|%|<|>|{|}|\[|]|\(|\)|:=)', line)
 
             for token in spline:
+                # ignore spaces and empty strings
+                if token in ['', '\t', '\n']:
+                    pass
+
                 # check if the string was finished on the same line
-                if within_string and token == ".":
+                elif within_string and token == ".":
                     within_string = False
                     print(f"Lexical error on line {line_nr} at token \"{entire_string}\". String was not closed.")
 
@@ -52,13 +56,13 @@ if __name__ == '__main__':
                 elif token == "~":
                     break
 
-                # add token to PIF if it is a reserved word or symbol
-                elif token in tokens:
-                    pif.genPIF(token, 0)
-
                 # pass if we find a space outside a string
                 elif within_string is False and token == " ":
                     pass
+
+                # add token to PIF if it is a reserved word or symbol
+                elif token in tokens:
+                    pif.genPIF(token, 0)
 
                 elif token == "\"":
                     # if we find a delimiter and we're not within the string, that means the string starts now
@@ -72,10 +76,6 @@ if __name__ == '__main__':
                         pif.genPIF(entire_string, idx)
                         within_string = False
                         entire_string = ""
-
-                # ignore spaces and empty strings
-                elif token in ['', '\t', '\n']:
-                    pass
 
                 # if the token is an identifier
                 elif re.match('^[a-zA-Z]+$', token):

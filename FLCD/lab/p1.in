@@ -1,4 +1,4 @@
-declare int a, b, c, max, axm, maxm.
+declare int a, b, c, max, axm.
 read int a, b, c.
 max := a.
 if a <= b then {

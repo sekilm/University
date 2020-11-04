@@ -36,12 +36,14 @@ class HashTable:
     def find(self, identifier):
         index = self.hash(identifier)
         node = self.slots[index]
+        pos = 0
 
         while node is not None and node.identifier != identifier:
+            pos += 1
             node = node.next
 
         if node is None:
             return None
         else:
             ascii_values = [ord(i) for i in identifier]
-            return sum(ascii_values)
+            return sum(ascii_values), pos

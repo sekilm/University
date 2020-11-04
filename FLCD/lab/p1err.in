@@ -1,3 +1,2 @@
 declare string "my string". ~didn’t close quotation marks
 declare int n3. ~identifiers allow only letters
--12
