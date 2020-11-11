@@ -21,13 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="373080b2-3275-4578-b210-c1ee0a2500ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ST.py" beforeDir="false" afterPath="$PROJECT_DIR$/ST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashtable.py" beforeDir="false" afterPath="$PROJECT_DIR$/hashtable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p1.in" beforeDir="false" afterPath="$PROJECT_DIR$/p1.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/p1err.in" beforeDir="false" afterPath="$PROJECT_DIR$/p1err.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pif.out" beforeDir="false" afterPath="$PROJECT_DIR$/pif.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/st.out" beforeDir="false" afterPath="$PROJECT_DIR$/st.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab4/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lab4/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +51,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,6 +146,8 @@
       <workItem from="1604340231473" duration="107000" />
       <workItem from="1604411797355" duration="1228000" />
       <workItem from="1604486453625" duration="15054000" />
+      <workItem from="1605087465803" duration="25000" />
+      <workItem from="1605099284608" duration="11000" />
     </task>
     <servers />
   </component>
@@ -174,6 +171,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.117.1920.1040@0.0.1920.1040" timestamp="1604340281453" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605087489079">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.6.1920.1040@0.0.1920.1040" timestamp="1605087489079" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1604501796118">
       <screen x="-1920" y="6" width="1920" height="1040" />
     </state>

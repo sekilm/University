@@ -38,7 +38,10 @@ class FiniteAutomata:
                 state2 = rhs.strip()
                 state1, route = [t.strip() for t in lhs.strip()[1:-1].split(',')]
 
-                self.P[(state1, route)] = state2
+                if (state1, route) in self.P.keys():
+                    self.P[state1, route] = [self.P[state1, route], state2]
+                else:
+                    self.P[state1, route] = state2
 
     def check_Q(self):
         for i in range(len(self.Q)):
@@ -54,14 +57,14 @@ class FiniteAutomata:
                     return False
         return True
 
+    def check_q0(self):
+        return self.q0 is not list and self.q0 is not dict and self.q0 is not set
+
     def check_P(self):
         for k, v in self.P.items():
             if k[0] in self.Q and k[1] in self.E and v in self.Q:
                 return True
         return False
-
-    def check_q0(self):
-        return self.q0 is not list and self.q0 is not dict
 
     def check_F(self):
         for i in range(len(self.F)):
@@ -104,6 +107,32 @@ class FiniteAutomata:
                 s += ", "
         return s
 
+    def accept_sequence(self, sequence):
+        for v in self.P.values():
+            if len(v) != 1:
+                return False
+
+        sequence = list(sequence)
+
+        current_state = self.q0
+
+        while sequence:
+            transition_symbol = sequence[0]
+            sequence = sequence[1:]
+
+            if transition_symbol not in self.E:
+                return False
+
+            if (current_state, transition_symbol) not in self.P.keys():
+                return False
+
+            current_state = list(self.P[current_state, transition_symbol])[0]
+
+        if current_state not in self.F:
+            return False
+
+        return True
+
 
 if __name__ == '__main__':
     fa = FiniteAutomata("fa.in")
@@ -113,6 +142,7 @@ if __name__ == '__main__':
     print("3 - Show the transitions")
     print("4 - Show the initial state")
     print("5 - Show the final states")
+    print("6 - Check if a sequence is accepted by the FA for a DFA")
     print("x - Exit\n")
 
     while True:
@@ -127,8 +157,6 @@ if __name__ == '__main__':
                 print("The alphabet should contain unique symbols")
         if choice == "3":
             print(fa.print_P())
-            if fa.check_P() is False:
-                print("The transitions should contain only triplets")
         if choice == "4":
             print(fa.print_q0())
             if fa.check_q0() is False:
@@ -137,5 +165,11 @@ if __name__ == '__main__':
             print(fa.print_F())
             if fa.check_F() is False:
                 print("The set of final states should contain unique states")
+        if choice == "6":
+            sequence = input("Give the sequence you want to check:\n")
+            if fa.accept_sequence(sequence):
+                print("The sequence is accepted by the FA for a DFA")
+            else:
+                print("The sequence is NOT accepted by the FA for a DFA")
         if choice == "x":
             break
