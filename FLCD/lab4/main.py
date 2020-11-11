@@ -39,7 +39,10 @@ class FiniteAutomata:
                 state1, route = [t.strip() for t in lhs.strip()[1:-1].split(',')]
 
                 if (state1, route) in self.P.keys():
-                    self.P[state1, route] = [self.P[state1, route], state2]
+                    if state2 in self.P[state1, route]:
+                        pass
+                    else:
+                        self.P[state1, route] = [self.P[state1, route], state2]
                 else:
                     self.P[state1, route] = state2
 
@@ -110,6 +113,7 @@ class FiniteAutomata:
     def accept_sequence(self, sequence):
         for v in self.P.values():
             if len(v) != 1:
+                print("The FA is not a DFA")
                 return False
 
         sequence = list(sequence)
