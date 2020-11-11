@@ -1,4 +1,0 @@
-rootProject.name = 'p9-rest'
-include 'p9-client'
-include 'p9-core'
-include 'p9-web'

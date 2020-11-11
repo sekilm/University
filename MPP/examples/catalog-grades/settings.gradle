@@ -1,4 +1,0 @@
-rootProject.name = 'catalog-grades'
-include 'catalog-core'
-include 'catalog-web'
-

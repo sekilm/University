@@ -1,3 +1,0 @@
-rootProject.name = 'catalog-1-list-start'
-include 'catalog-core'
-include 'catalog-web'
