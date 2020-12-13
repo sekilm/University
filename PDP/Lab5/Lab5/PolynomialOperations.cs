@@ -52,7 +52,7 @@ namespace Lab5
                 threads.Add(newThread);
             }
             
-            for (int i = 0; i < threadNumber; i++)
+            for (int i = 0; i < threadNumber; i += step)
                 threads[i].Join();
 
             return result;
@@ -82,7 +82,7 @@ namespace Lab5
             return new Polynomial(coefficients);
         }
 
-        public static void AddRemainingCoefficients(Polynomial p, Polynomial q, int minDegree, int maxDegree,
+        public static List<int> AddRemainingCoefficients(Polynomial p, Polynomial q, int minDegree, int maxDegree,
             List<int> coeff)
         {
             if (minDegree != maxDegree)
@@ -98,6 +98,8 @@ namespace Lab5
                         coeff.Add(q.getCoefficients()[i]);
                 }
             }
+
+            return coeff;
         }
 
         public static Polynomial Subtract(Polynomial p, Polynomial q)
@@ -109,10 +111,10 @@ namespace Lab5
             for (int i = 0; i < minDegree; i++)
                 coefficients.Add(p.getCoefficients()[i] - q.getCoefficients()[i]);
             
-            AddRemainingCoefficients(p, q, minDegree, maxDegree, coefficients);
+            coefficients = AddRemainingCoefficients(p, q, minDegree, maxDegree, coefficients);
 
             int idx = coefficients.Count - 1;
-            while (coefficients[idx] == 0 && idx > 0)
+            while (idx > 0 && coefficients[idx] == 0)
             {
                 coefficients.RemoveAt(idx);
                 idx--;
@@ -156,7 +158,7 @@ namespace Lab5
             Polynomial lowQ = new Polynomial(q.getCoefficients().GetRange(0, len));
             Polynomial highQ = new Polynomial(q.getCoefficients().GetRange(len, p.getLength() - len));
 
-            var work = new BlockingCollection<Polynomial>();
+            //var work = new BlockingCollection<Polynomial>();
             var producer1 = Task.Factory.StartNew(() => KaratsubaParallelizedMultiplication(lowP, lowQ, depth + 1));
             var producer2 = Task.Factory.StartNew(() => KaratsubaParallelizedMultiplication(Add(lowP, highP), Add(lowQ, highQ), depth + 1));
             var producer3 = Task.Factory.StartNew(() => KaratsubaParallelizedMultiplication(highP, highQ, depth));

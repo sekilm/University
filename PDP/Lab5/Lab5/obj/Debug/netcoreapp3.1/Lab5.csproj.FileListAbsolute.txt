@@ -1,0 +1,13 @@
+E:\School\Facultate\University\PDP\Lab5\Lab5\bin\Debug\netcoreapp3.1\Lab5.exe
+E:\School\Facultate\University\PDP\Lab5\Lab5\bin\Debug\netcoreapp3.1\Lab5.deps.json
+E:\School\Facultate\University\PDP\Lab5\Lab5\bin\Debug\netcoreapp3.1\Lab5.runtimeconfig.json
+E:\School\Facultate\University\PDP\Lab5\Lab5\bin\Debug\netcoreapp3.1\Lab5.runtimeconfig.dev.json
+E:\School\Facultate\University\PDP\Lab5\Lab5\bin\Debug\netcoreapp3.1\Lab5.dll
+E:\School\Facultate\University\PDP\Lab5\Lab5\bin\Debug\netcoreapp3.1\Lab5.pdb
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.csprojAssemblyReference.cache
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.AssemblyInfoInputs.cache
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.AssemblyInfo.cs
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.csproj.CoreCompileInputs.cache
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.dll
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.pdb
+E:\School\Facultate\University\PDP\Lab5\Lab5\obj\Debug\netcoreapp3.1\Lab5.genruntimeconfig.cache
