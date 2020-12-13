@@ -7,20 +7,35 @@ namespace Lab5
 {
     public class Polynomial
     {
-        private int[] coefficients;
-        public Polynomial(int[] coefficients)
+        private List<int> coefficients;
+        public Polynomial(List<int> coefficients)
         {
             this.coefficients = coefficients;
         }
 
+        public Polynomial(int degree)
+        {
+            coefficients = new List<int>(degree + 1);
+            
+            Random r = new Random();
+            for (int i = 0; i < degree; i++)
+                coefficients.Add(r.Next(10));
+            coefficients.Add(r.Next(10) + 1);
+        }
+
         public int getMaxDegree()
         {
-            return this.coefficients.Length - 1;
+            return coefficients.Count - 1;
         }
 
         public int getLength()
         {
-            return this.coefficients.Length;
+            return coefficients.Count;
+        }
+
+        public List<int> getCoefficients()
+        {
+            return coefficients;
         }
 
         public override string ToString()

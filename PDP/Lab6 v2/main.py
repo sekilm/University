@@ -31,9 +31,10 @@ def hamiltonianPath(graph, threadNumber):
 
 
 if __name__ == '__main__':
-    graph = generateGraph(30)
-    hamiltonianPath(graph, 5)
+    graph = generateGraph(50)
     print(graph)
+
+    hamiltonianPath(graph, 5)
 
     with Task.mutex:
         print("Hamiltonian path:", Task.finalPath)

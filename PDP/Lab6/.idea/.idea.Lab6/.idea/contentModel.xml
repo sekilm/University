@@ -5,7 +5,6 @@
     <e p="C:\Users\Bogdan\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Lab6.1634202024.00" t="ExcludeRecursive" />
     <e p="E:\School\Facultate\University\PDP\Lab6" t="IncludeFlat">
       <e p="Lab6" t="IncludeRecursive">
-        <e p="Attempt.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="DirectedGraph.cs" t="Include" />
         <e p="Lab6.csproj" t="IncludeRecursive" />
@@ -17,6 +16,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Task.cs" t="Include" />
       </e>
       <e p="Lab6.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

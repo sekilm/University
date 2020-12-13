@@ -23,8 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98e895f0-51e1-498b-9581-6cd36a9875b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab3/.idea/.idea.lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.idea/.idea.lab3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/lab3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/lab3/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab5/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab5/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/Polynomial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/Polynomial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6 v2/Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6 v2/Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6 v2/Task.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6 v2/Task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6 v2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6 v2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/.idea/.idea.Lab6/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/.idea/.idea.Lab6/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/.idea/.idea.Lab6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/.idea/.idea.Lab6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/Lab6/Attempt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/Lab6/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/Lab6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/Lab6/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +43,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../lab3/lab3/Program.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Lab5/Program.cs" />
         <option value="$PROJECT_DIR$/Lab5/Polynomial.cs" />
+        <option value="$PROJECT_DIR$/Lab5/MultiplicationTask.cs" />
+        <option value="$PROJECT_DIR$/Lab5/Program.cs" />
+        <option value="$PROJECT_DIR$/Lab5/PolynomialOperations.cs" />
       </list>
     </option>
   </component>
@@ -93,6 +107,8 @@
       <workItem from="1607016898178" duration="49000" />
       <workItem from="1607270904083" duration="2603000" />
       <workItem from="1607273531101" duration="1172000" />
+      <workItem from="1607859274001" duration="2170000" />
+      <workItem from="1607865122085" duration="3567000" />
     </task>
     <servers />
   </component>

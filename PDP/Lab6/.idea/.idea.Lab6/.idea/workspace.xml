@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="280c5bee-5097-4c0f-a772-5c371a8ec0d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab3/.idea/.idea.lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/.idea/.idea.lab3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab3/lab3/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3/lab3/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6 v2/Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6 v2/Graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6 v2/Task.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6 v2/Task.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6 v2/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6 v2/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Attempt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab6/Task.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab6/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab6/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +45,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/14E/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../lab3/lab3/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/3DC/List.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../lab1 pb3/lab1 pb3/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/13B/Thread.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -53,6 +54,7 @@
         <option value="$PROJECT_DIR$/Lab6/DirectedGraph.cs" />
         <option value="$PROJECT_DIR$/Lab6/Attempt.cs" />
         <option value="$PROJECT_DIR$/Lab6/Program.cs" />
+        <option value="$PROJECT_DIR$/Lab6/Task.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +112,7 @@
       <workItem from="1607274743254" duration="2914000" />
       <workItem from="1607278456991" duration="1935000" />
       <workItem from="1607334843866" duration="5058000" />
+      <workItem from="1607354236113" duration="106000" />
     </task>
     <servers />
   </component>
@@ -219,14 +222,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Lab6/Attempt.cs</url>
+          <url>file://$PROJECT_DIR$/Lab6/Task.cs</url>
           <line>60</line>
           <properties documentPath="E:\School\Facultate\University\PDP\Lab6\Lab6\Attempt.cs" initialLine="60">
             <startOffsets>
-              <option value="1594" />
+              <option value="1589" />
             </startOffsets>
             <endOffsets>
-              <option value="1611" />
+              <option value="1606" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

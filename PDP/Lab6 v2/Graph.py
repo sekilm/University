@@ -8,7 +8,7 @@ class Graph:
             self.neighbours.append([])
 
     def addEdge(self, source, target):
-        if target not in self.neighbours[source]:
+        if source in self.nodes and target not in self.neighbours[source]:
             self.neighbours[source].append(target)
 
     def getNeighbours(self, node):

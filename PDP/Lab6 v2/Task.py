@@ -1,7 +1,5 @@
 import threading
 
-from Graph import Graph
-
 finalPath = []
 mutex = threading.RLock()
 

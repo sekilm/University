@@ -9,7 +9,7 @@ namespace Lab6
     class Program
     {
         public static Mutex mutex = new Mutex();
-        public static List<int> result = new List<int>();
+        public static List<int> finalPath = new List<int>();
         public static int threadNumber = 1;
         
         static void Main(string[] args)
@@ -45,7 +45,7 @@ namespace Lab6
         {
             lock (mutex)
             {
-                Program.result = new List<int>();
+                Program.finalPath = new List<int>();
                 
                 /*for (int i = 0; i < graph.nodes.Count; i++)
                     ThreadPool.QueueUserWorkItem(obj => new Attempt(graph, i).run());*/
@@ -55,7 +55,7 @@ namespace Lab6
                 {
                     for (int j = 0; j < graph.nodes.Count - 1; j++)
                     {
-                        Attempt newAttempt = new Attempt(graph, j);
+                        Task newAttempt = new Task(graph, j);
                         Thread newThread = new Thread(() => newAttempt.run());
                         newThread.Start();
                         threads.Add(newThread);
@@ -64,8 +64,8 @@ namespace Lab6
                 for (int i = 0; i < threadNumber; i++)
                     threads[i].Join();
                 
-                for (int i = 0; i < result.Count; i++)
-                    Console.WriteLine(result[i]);
+                for (int i = 0; i < finalPath.Count; i++)
+                    Console.WriteLine(finalPath[i]);
             }
         }
     }

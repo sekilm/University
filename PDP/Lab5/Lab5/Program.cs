@@ -8,15 +8,18 @@ namespace Lab5
     {
         static void Main(string[] args)
         {
-            int[] l1 = {5, 4, 2, 4};
-            int[] l2 = {6, 3, 7};
-            Polynomial p = new Polynomial(l1);
-            Polynomial q = new Polynomial(l2);
+            Polynomial p = new Polynomial(100);
+            Polynomial q = new Polynomial(100);
             
             Console.WriteLine("Polynom P: {0}", p);
             Console.WriteLine("Polynom Q: {0}", q);
             
+            Polynomial result = PolynomialOperations.SequentialMultiplication(p, q);
+            //Polynomial result = PolynomialOperations.ParallelizedMultiplication(p, q, 5);
+            //Polynomial result = PolynomialOperations.KaratsubaSequentialMultiplication(p, q);
+            //Polynomial result = PolynomialOperations.KaratsubaParallelizedMultiplication(p, q, 4);
             
+            Console.WriteLine("Multiplication: {0}", result);
         }
     }
 }
